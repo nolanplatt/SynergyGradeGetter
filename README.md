@@ -14,4 +14,4 @@ In order to provide fast, secure, and clean text messages, I utilized a paid (bu
 If you prefer not to pay, you can easily create a work-around by utilizing your own mail server and mapping to your carrier's SMS address. More explanation can be found [here](https://www.npmjs.com/package/textbelt/v/0.0.2). I also plan to implement this at some point.
 
 ## Questions
-If you have any questions or requests feel free to contact me. My contact info is available on my [website](https://nolanplat.com).
+If you have any questions or requests feel free to contact me. My contact info is available on my [website](https://nolanplatt.com).
