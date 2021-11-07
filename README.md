@@ -4,6 +4,8 @@
 As a stressed high school student, I found myself constantly checking my gradebook every twenty minutes or so. It was distracting and my grades were always in the back of my mind. To fix this, I created an automated way to detect grade changes and send me an SMS text whenever something changes.
 
 
+## Note
+This project is specifically meant for Poway Unified School District's StudentVue, a gradebook system designed by [Edupoint](https://edupoint.com/). It can very easily be modified for any other district's StudentVue host. Feel free to reach out to me if you need help.
 
 ## Libraries
 1. [Selenium Webdriver](https://www.npmjs.com/package/selenium-webdriver)
