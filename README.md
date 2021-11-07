@@ -1,3 +1,4 @@
+![Synergy Logo](https://www.kindpng.com/picc/m/152-1528642_synergy-logo-2019-vertical-edupoint-synergy-logo-hd.png)
 # Synergy Grade Getter
 ## A sophisticated and intuitive way of detecting grade changes. 
 As a stressed high school student, I found myself constantly checking my gradebook every twenty minutes or so. It was distracting and my grades were always in the back of my mind. To fix this, I created an automated way to detect grade changes and send me an SMS text whenever something changes.
