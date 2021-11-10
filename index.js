@@ -7,13 +7,13 @@ const request = require('request');
 var classes = [];
 var grades = [];
 // Owner info
-const ownerTextBeltKey = "OWNER_KEY"
+
+(async function main() {
+  var notifications = [];
+  const ownerTextBeltKey = "OWNER_KEY"
 const ownerPhoneNumber = "OWNER_PHONE_NUMBER";
 const ownerUsername = "OWNER_STUDENTVUE_USERNAME"
 const ownerPassword = "OWNER_STUDENTVUE_PASSWORD"
-(async function main() {
-  var notifications = [];
-  
    // Establish driver and ensure it is headless
   let driver = await new Builder().forBrowser('chrome').setChromeOptions(new chrome.Options().headless()).build();
   try {
@@ -31,7 +31,7 @@ const ownerPassword = "OWNER_STUDENTVUE_PASSWORD"
    // End login handling
  
    // Navigate to gradebook
-    await driver.get("https://sis.powayusd.com/PXP2_Gradebook.aspx")
+    await driver.get("https://sis.powayusd.com/PXP2_Gradebook.aspx?AGU=0&studentGU=33B9B6ED-F004-414E-945B-154614D7FF18")
 
 
    // Get Name of Class for Each Period
@@ -53,8 +53,8 @@ const ownerPassword = "OWNER_STUDENTVUE_PASSWORD"
     {
       const percentage = await driver.findElement(By.css(`.row:nth-child(${percElementCount}) .score`)).getText();
       if(percentage != grades[j]) {
+        grades[j] = percentage;
         notifications.push(j);
-        grades.push(percentage)
       } else {
         grades.push(percentage);
       }   
@@ -67,8 +67,8 @@ const ownerPassword = "OWNER_STUDENTVUE_PASSWORD"
     // If not -> do nothing
   if(notifications.length != 0) {
     var message = "**Synergy Grade Getter -> Grades Updated**\n";
-    for (let l = 0; l < notifications.length; l++) {
-      message+= classes[notifications[l]] + ": " + grades[notifications[l]] + "\n";
+    for (let k = 0; k < 5; k++) {
+      message+= classes[[k]] + ": " + grades[k] + "\n";
     }
  // Send notification via textbelt API     
   request.post('https://textbelt.com/text', {
