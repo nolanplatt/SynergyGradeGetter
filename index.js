@@ -3,6 +3,11 @@ const {Builder, By, Key, until} = require('selenium-webdriver');
 const chrome = require('selenium-webdriver/chrome');
 const request = require('request');
 
+const options = new chrome.Options()
+
+options.addArguments('--disable-dev-shm-usage')
+options.addArguments('--no-sandbox')
+
 // General member variables
 var classes = [];
 var grades = [];
@@ -10,12 +15,15 @@ var grades = [];
 
 (async function main() {
   var notifications = [];
-  const ownerTextBeltKey = "OWNER_KEY"
-const ownerPhoneNumber = "OWNER_PHONE_NUMBER";
-const ownerUsername = "OWNER_STUDENTVUE_USERNAME"
-const ownerPassword = "OWNER_STUDENTVUE_PASSWORD"
+  const ownerTextBeltKey = ""
+const ownerPhoneNumber = "";
+const ownerUsername = ""
+const ownerPassword = ""
    // Establish driver and ensure it is headless
-  let driver = await new Builder().forBrowser('chrome').setChromeOptions(new chrome.Options().headless()).build();
+  let driver = await new Builder()
+  .forBrowser('chrome')
+  .setChromeOptions(options)
+  .build()
   try {
     
    // Navigate to StudentVue
