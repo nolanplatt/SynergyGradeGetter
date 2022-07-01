@@ -18,3 +18,6 @@ If you prefer not to pay, you can easily create a work-around by utilizing your 
 
 ## Questions
 If you have any questions or requests feel free to contact me. My contact info is available on my [website](https://nolanplatt.com).
+
+## Legal
+SynerGradeGetter utilizes selenium webdriver, an open source tool designed by Google. This project utilizes a headless version of selenium, and hence you cannot see the Google Chrome window. Its navigation, however, is similar to a human and requests to StudentVue are not made in a harmful manner. Furthermore, requests to StudentVue are spread out and hence do not cause stress on the server of Synergy/Edupoint. Any requests or questions can be directed to my email at nolanplatt1@gmail.com 
