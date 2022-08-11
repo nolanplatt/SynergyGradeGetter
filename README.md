@@ -1,5 +1,9 @@
 ![Synergy Logo](https://play-lh.googleusercontent.com/43vg9yqJ6keUxcLmlhILmpAGVG5q1XTpKtkUDMiggTWvzD7j_vi8bdqRI23dWnEy7A)
 # Synergy Grade Getter
+
+Synergy will be available for the 2022/2023 school year beginning in the evening of August 17th, 2022.
+
+
 ## A sophisticated and intuitive way of detecting grade changes. 
 As a stressed high school student, I found myself constantly checking my gradebook every twenty minutes or so. It was distracting and my grades were always in the back of my mind. To fix this, I created an automated way to detect grade changes and send me an SMS text whenever something changes.
 
