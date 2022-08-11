@@ -39,7 +39,7 @@ const ownerPassword = ""
    // End login handling
  
    // Navigate to gradebook
-    await driver.get("https://sis.powayusd.com/PXP2_Gradebook.aspx?AGU=0&studentGU=33B9B6ED-F004-414E-945B-154614D7FF18")
+    await driver.get("https://sis.powayusd.com/PXP2_Gradebook.aspx")
 
 
    // Get Name of Class for Each Period
