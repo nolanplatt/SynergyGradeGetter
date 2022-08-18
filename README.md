@@ -1,7 +1,7 @@
 ![Synergy Logo](https://play-lh.googleusercontent.com/43vg9yqJ6keUxcLmlhILmpAGVG5q1XTpKtkUDMiggTWvzD7j_vi8bdqRI23dWnEy7A)
 # Synergy Grade Getter
 
-Synergy will be available for the 2022/2023 school year on the evening of August 17th, 2022.
+✅SynergyGradeGetter is now updated for the 2022/2023 school year!
 
 
 ## A sophisticated and intuitive way of detecting grade changes. 
