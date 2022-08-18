@@ -44,7 +44,7 @@ const ownerPassword = ""
 
    // Get Name of Class for Each Period
     let nameElementCount = 1;
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 4; i++) {
     await driver.findElement(By.css(`.row:nth-child(${nameElementCount})`))
     {
       const name = await driver.findElement(By.css(`.row:nth-child(${nameElementCount}) .btn`)).getText();
@@ -56,7 +56,7 @@ const ownerPassword = ""
   // Get Grade as Percentage for Each Period
 
     let percElementCount = 2;
-    for (let j = 0; j < 5; j++) {
+    for (let j = 0; j < 4; j++) {
     await driver.findElement(By.css(`.row:nth-child(${percElementCount})`))
     {
       const percentage = await driver.findElement(By.css(`.row:nth-child(${percElementCount}) .score`)).getText();
